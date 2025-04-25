@@ -1,23 +1,53 @@
-# CSI GroqBot
+# Forensic IQ 🔍
 
-An AI-powered multimodal crime scene assistant that processes images, audio, and text using Groq's high-speed AI APIs.
+Advanced AI-Powered Crime Scene Analysis Tool
+
+## Overview
+
+Forensic IQ is a sophisticated web application that leverages AI to analyze crime scene evidence through multiple modalities:
+- 🖼️ Image Analysis
+- 🎤 Audio Analysis
+- 📝 Text Analysis
 
 ## Features
 
-- 🖼️ **Image Analysis**: Upload crime scene photos for AI-powered object detection
-- 🎤 **Audio Analysis**: Process audio files for transcription and emotional analysis
-- 📝 **Text Analysis**: Analyze written reports for key insights and patterns
+### 1. Image Analysis
+- Object detection in crime scene photos
+- Evidence identification
+- Environmental condition assessment
+- Safety concern identification
+- Detailed forensic insights
+
+### 2. Audio Analysis
+- Speech-to-text transcription
+- Emotional tone analysis
+- Threat detection
+- Key points extraction
+- Context analysis
+
+### 3. Text Analysis
+- Key findings extraction
+- Red flag identification
+- Priority assessment
+- Action recommendations
+- Contextual analysis
+
+## Tech Stack
+
+- **Frontend**: React + TailwindCSS
+- **Backend**: FastAPI (Python)
+- **AI Integration**: Groq API
+- **Image Processing**: Hugging Face Vision Models
+- **Audio Processing**: Whisper Model
 
 ## Setup Instructions
 
 ### Prerequisites
-
-- Node.js (v16 or higher)
-- Python (v3.8 or higher)
-- Groq API Key
+- Node.js (v14 or higher)
+- Python (3.8 or higher)
+- pip (Python package manager)
 
 ### Backend Setup
-
 1. Navigate to the backend directory:
    ```bash
    cd backend
@@ -26,10 +56,7 @@ An AI-powered multimodal crime scene assistant that processes images, audio, and
 2. Create and activate a virtual environment:
    ```bash
    python -m venv env
-   # On Windows:
-   .\env\Scripts\activate
-   # On Unix/MacOS:
-   source env/bin/activate
+   source env/bin/activate  # On Windows: .\env\Scripts\activate
    ```
 
 3. Install dependencies:
@@ -37,9 +64,10 @@ An AI-powered multimodal crime scene assistant that processes images, audio, and
    pip install -r requirements.txt
    ```
 
-4. Create a `.env` file with your Groq API key:
+4. Create a `.env` file with your API keys:
    ```
-   GROQ_API_KEY=your_api_key_here
+   GROQ_API_KEY=your_groq_api_key
+   HUGGINGFACE_API_KEY=your_huggingface_api_key
    ```
 
 5. Start the backend server:
@@ -48,7 +76,6 @@ An AI-powered multimodal crime scene assistant that processes images, audio, and
    ```
 
 ### Frontend Setup
-
 1. Navigate to the frontend directory:
    ```bash
    cd frontend
@@ -66,26 +93,44 @@ An AI-powered multimodal crime scene assistant that processes images, audio, and
 
 ## Usage
 
-1. Open your browser and navigate to `http://localhost:5173`
-2. Upload images, audio files, or enter text for analysis
-3. View the AI-generated insights in real-time
+1. Access the application at `http://localhost:5174`
+
+2. Image Analysis:
+   - Click "Image Analysis"
+   - Upload a crime scene photo
+   - View detailed AI analysis results
+
+3. Audio Analysis:
+   - Click "Audio Analysis"
+   - Upload an audio recording
+   - Review transcription and analysis
+
+4. Text Analysis:
+   - Click "Text Analysis"
+   - Enter or paste text
+   - Click "Analyze Text"
+   - Review comprehensive analysis
 
 ## API Endpoints
 
-- `POST /analyze/image`: Analyze crime scene photos
-- `POST /analyze/audio`: Process audio recordings
-- `POST /analyze/text`: Analyze written reports
+- `POST /analyze/image`: Image analysis endpoint
+- `POST /analyze/audio`: Audio analysis endpoint
+- `POST /analyze/text`: Text analysis endpoint
 
-## Technologies Used
+## Security Notes
 
-- Frontend: React + TypeScript + TailwindCSS
-- Backend: FastAPI (Python)
-- AI: Groq APIs (LLaVA, Whisper, Mixtral)
+- API keys should be kept secure and never committed to version control
+- Use environment variables for sensitive information
+- Follow security best practices for production deployment
 
 ## Contributing
 
-This project was created during a hackathon. Feel free to submit issues and pull requests for improvements.
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
 
 ## License
 
-MIT License 
+This project is licensed under the MIT License - see the LICENSE file for details. 
