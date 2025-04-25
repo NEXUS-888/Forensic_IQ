@@ -1,4 +1,4 @@
-# CSI GroqBot
+# Foresic IQ
 
 An AI-powered multimodal crime scene assistant that processes images, audio, and text using Groq's high-speed AI APIs.
 
