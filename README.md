@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Forensic IQ 🔍
+=======
+# Foresic IQ
+>>>>>>> 734cb968d3cb9bb97280779edf6988ac873b1b78
 
 Advanced AI-Powered Crime Scene Analysis Tool
 
@@ -133,4 +137,8 @@ Forensic IQ is a sophisticated web application that leverages AI to analyze crim
 
 ## License
 
+<<<<<<< HEAD
 This project is licensed under the MIT License - see the LICENSE file for details. 
+=======
+MIT License 
+>>>>>>> 734cb968d3cb9bb97280779edf6988ac873b1b78
